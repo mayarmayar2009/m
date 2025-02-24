@@ -1,0 +1,99 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "productImg": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "productTitle": {
+      "type": "string",
+      "required": true
+    },
+    "productPrice": {
+      "type": "decimal",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "men",
+        "women",
+        "unisex"
+      ],
+      "required": true
+    },
+    "productColor": {
+      "type": "enumeration",
+      "enum": [
+        "black",
+        "blue",
+        "brown",
+        "green",
+        "grey",
+        "multi-color",
+        "orange",
+        "pink",
+        "purple",
+        "red",
+        "white",
+        "yellow",
+        "gold"
+      ],
+      "required": true
+    },
+    "sizes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::size.size"
+    },
+    "brand": {
+      "type": "enumeration",
+      "enum": [
+        "dior",
+        "dior original",
+        "nike air force 1",
+        "nike air jordan 1",
+        "nike air jordan",
+        "nike jordan 4",
+        "nike-p6000 original",
+        "adidas samba",
+        "adidas forum low original",
+        "adidas adistar2 original",
+        "adidas campus",
+        "new balance",
+        "ROBERTO VINO",
+        "louis vuitton",
+        "louis vuitton and nike",
+        "dolce and gabbana",
+        "burberry",
+        "gucci",
+        "converse",
+        "nike & chanel",
+        "boss",
+        "essex",
+        "michael kors",
+        "under armur original",
+        "puma palermo",
+        "on cloud",
+        "the north face",
+        "بسطار",
+        "جزمات"
+      ]
+    }
+  }
+}

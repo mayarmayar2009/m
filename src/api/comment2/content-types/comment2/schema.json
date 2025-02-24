@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comment2s",
+  "info": {
+    "singularName": "comment2",
+    "pluralName": "comment2s",
+    "displayName": "comment2"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "author": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    }
+  }
+}

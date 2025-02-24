@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order2s",
+  "info": {
+    "singularName": "order2",
+    "pluralName": "order2s",
+    "displayName": "order2",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "city": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "buildingNumber": {
+      "type": "string"
+    },
+    "apartmentNumber": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "specialMark": {
+      "type": "text"
+    },
+    "discount": {
+      "type": "decimal"
+    },
+    "shippingCost": {
+      "type": "decimal"
+    },
+    "finalPrice": {
+      "type": "float"
+    },
+    "cartItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order.cart-item"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "تم الطلب",
+        "الشحن",
+        "التوصيل",
+        "تم الاستلام"
+      ]
+    }
+  }
+}
