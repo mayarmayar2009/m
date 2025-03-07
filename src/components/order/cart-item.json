@@ -20,6 +20,12 @@
     },
     "selectedSize": {
       "type": "string"
+    },
+    "productId": {
+      "type": "integer"
+    },
+    "productImage": {
+      "type": "string"
     }
   }
 }
